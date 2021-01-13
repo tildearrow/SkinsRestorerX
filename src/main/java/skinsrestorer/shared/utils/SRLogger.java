@@ -1,6 +1,5 @@
 package skinsrestorer.shared.utils;
 
-import org.bukkit.configuration.file.YamlConfiguration;
 import skinsrestorer.shared.storage.Config;
 
 import java.io.File;
@@ -70,11 +69,11 @@ public class SRLogger {
     }
 
     public void logAlways(Level level, String message) {
-        this.logger.log(level, "[SkinsRestorer] " + message);
+        this.logger.log(level, "§e[§2SkinsRestorer§e] §r" + message);
     }
 
     public void logAlways(Level level, String message, Throwable thrown) {
-        this.logger.log(level, "[SkinsRestorer] " + message, thrown);
+        this.logger.log(level, "§e[§2SkinsRestorer§e] §r" + message, thrown);
     }
 
 }

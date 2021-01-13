@@ -22,7 +22,6 @@ import skinsrestorer.shared.update.UpdateChecker;
 import skinsrestorer.shared.update.UpdateCheckerGitHub;
 import skinsrestorer.shared.utils.*;
 
-import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 @SuppressWarnings("Duplicates")
@@ -105,7 +104,7 @@ public class SkinsRestorer extends Plugin {
         this.mineSkinAPI.setSkinStorage(this.skinStorage);
 
         // Init listener
-        getProxy().getPluginManager().registerListener(this, new LoginListener(this));
+        getProxy().getPluginManager().registerListener(this, new LoginListener(this, this.srLogger));
 
         // Init commands
         this.initCommands();
@@ -135,7 +134,7 @@ public class SkinsRestorer extends Plugin {
         if (response.getWorkingUUID() == 0 || response.getWorkingProfile() == 0) {
             console.sendMessage(TextComponent.fromLegacyText("§c[§4Critical§c] ------------------[§2SkinsRestorer §cis §c§l§nOFFLINE§c] --------------------------------- "));
             console.sendMessage(TextComponent.fromLegacyText("§c[§4Critical§c] §cPlugin currently can't fetch new skins."));
-            console.sendMessage(TextComponent.fromLegacyText("§c[§4Critical§c] §cSee https://github.com/SkinsRestorer/SkinsRestorerX/wiki/Troubleshooting#connection for wiki "));
+            console.sendMessage(TextComponent.fromLegacyText("§c[§4Critical§c] §cSee http://skinsrestorer.net/firewall for wiki "));
             console.sendMessage(TextComponent.fromLegacyText("§c[§4Critical§c] §cFor support, visit our discord at https://discord.me/servers/skinsrestorer "));
             console.sendMessage(TextComponent.fromLegacyText("§c[§4Critical§c] ------------------------------------------------------------------------------------------- "));
         }

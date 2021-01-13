@@ -1,7 +1,7 @@
-##############################
-#  SkinsRestorer Config.yml  #
-#  Generated on 13.8.4       #
-##############################
+#################################
+#  SkinsRestorer Config.yml     #
+#  Generated on 13.8.6          #
+#################################
 #
 # We from SRTeam thank you for using our plugin!
 # For more information        -> https://github.com/SkinsRestorer/SkinsRestorerX/wiki/
@@ -119,6 +119,16 @@ UseOldSkinHelp: false
 
 #Ignore messages.yml 'PREFIX ='
 DisablePrefix: false
+
+# Dismounts a mounted (on a horse, or sitting) player when they a skin is updated, preventing players from becoming desynced.
+DismountPlayerOnSkinUpdate: true
+
+# Remounts a player that was dismounted after a skin update (above option must be true).
+# Disable this is only recommended if you do use plugins that allow you ride other players, or use sit. Otherwise you could get errors or players could be kicked for flying.
+RemountPlayerOnSkinUpdate: true
+
+# Dismounts all passengers mounting a player (such as plugins that let you ride another player), preventing those players from becoming desynced.
+DismountPassengersOnSkinUpdate: false
 
   ################
   # DEV's corner #
