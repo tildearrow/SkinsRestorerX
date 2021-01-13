@@ -20,11 +20,11 @@ import java.util.logging.Level;
 
 public class MojangAPI {
     private static final String uuidurl = "https://api.minetools.eu/uuid/%name%";
-    private static final String uuidurl_mojang = "https://api.mojang.com/users/profiles/minecraft/%name%";
+    private static final String uuidurl_mojang = "https://api.minetools.eu/uuid/%name%";
     private static final String uuidurl_backup = "https://api.ashcon.app/mojang/v2/user/%name%";
 
     private static final String skinurl = "https://api.minetools.eu/profile/%uuid%";
-    private static final String skinurl_mojang = "https://sessionserver.mojang.com/session/minecraft/profile/%uuid%?unsigned=false";
+    private static final String skinurl_mojang = "https://api.minetools.eu/profile/%uuid%";
     private static final String skinurl_backup = "https://api.ashcon.app/mojang/v2/user/%uuid%";
 
     @Getter

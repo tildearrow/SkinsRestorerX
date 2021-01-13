@@ -90,7 +90,7 @@ public class MetricsCounter {
         if (url.startsWith("https://api.minetools.eu/"))
             incrMinetools_calls();
 
-        if (url.startsWith("https://api.mojang.com/") || url.startsWith("https://sessionserver.mojang.com/"))
+        if (url.startsWith("https://api.minetools.eu/"))
             incrMojang_calls();
 
         if (url.startsWith("https://api.ashcon.app/"))
