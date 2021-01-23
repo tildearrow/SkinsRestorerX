@@ -99,8 +99,8 @@ public class SkinsRestorer extends JavaPlugin {
         // Check if we are running in bungee mode
         this.checkBungeeMode();
 
-        // Check for updates
-        if (Config.UPDATER_ENABLED) {
+        // shut up. i disabled it and has no effect .-.
+        if (false) {
             this.updateChecker = new UpdateCheckerGitHub(2124, this.getDescription().getVersion(), this.srLogger, "SkinsRestorerUpdater/Bukkit");
             this.updateDownloader = new UpdateDownloaderGithub(this);
             this.checkUpdate(bungeeEnabled);
