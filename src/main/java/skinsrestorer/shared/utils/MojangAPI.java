@@ -188,6 +188,8 @@ public class MojangAPI {
         } catch (IOException e) {
             if (tryNext)
                 return getUUIDBackup(name);
+        } catch (UnsupportedOperationException e1) {
+            throw new SkinRequestException(Locale.NOT_PREMIUM);
         }
         return null;
     }
